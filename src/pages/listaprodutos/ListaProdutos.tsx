@@ -1,11 +1,11 @@
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
+
 import './ListaProdutos.css'
+import '../../assets/img/produtos/le_grand_chocolat.png'
 
 function ListaProdutos() {
     return (
         <>
-            <Header />
+           
             <main>
                 <section className="prod_banner" />
                 <section className="container prod_container">
@@ -41,7 +41,7 @@ function ListaProdutos() {
                     </div>
                 </section>
             </main>
-            <Footer />
+
         </>
     )
 }
