@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './Dialog.css'
 import { Button, Modal } from 'react-bootstrap';
 
@@ -17,7 +17,7 @@ type DialogProps = {
 function Dialog({ title,
    mostrar,
    mensagem = "Esta é uma mensagem padrão",
-   textoConfirmar= "Confirmar", 
+   textoConfirmar = "Confirmar", 
    textoCancelar = "Cancelar", 
    aoFechar, 
    aoConfirmar }: DialogProps) {
@@ -32,8 +32,8 @@ function Dialog({ title,
         </Modal.Header>
         <Modal.Body>{mensagem}</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={aoFechar}>textoCancelar</Button>
-          <Button variant="primary" onClick={aoConfirmar}>textoConfirmar</Button>
+          <Button variant="secondary" onClick={aoFechar}>{textoCancelar}</Button>
+          <Button variant="primary" onClick={aoConfirmar}>{textoConfirmar}</Button>
         </Modal.Footer>
       </Modal>
     </>
